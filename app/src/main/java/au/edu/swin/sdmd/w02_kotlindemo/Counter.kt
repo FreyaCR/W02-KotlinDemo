@@ -16,8 +16,6 @@ fun main(args: Array<String>) {
         counters[0].increment()
     }
     printCounters(counters)
-
-
 }
 
 fun printCounters(counters: List<Counter>) {
