@@ -1,6 +1,6 @@
 package au.edu.swin.sdmd.w02_kotlindemo
 
-import java.util.*    // required import
+import java.util.* // required import
 
 fun main(args: Array<String>) {
     feedTheFish()
@@ -20,15 +20,12 @@ fun randomDay() : String {
 }
 
 fun fishFood (day : String) : String {
-    var food = ""
-    when (day) {
-        "Monday" -> food = "flakes"
-        "Tuesday" -> food = "pellets"
-        "Wednesday" -> food = "redworms"
-        "Thursday" -> food = "granules"
-        "Friday" -> food = "mosquitoes"
-        "Saturday" -> food = "lettuce"
-        "Sunday" -> food = "plankton"
+    return when (day) {
+        "Monday" -> "flakes"
+        "Wednesday" -> "redworms"
+        "Thursday" -> "granules"
+        "Friday" -> "mosquitoes"
+        "Sunday" -> "plankton"
+        else -> "nothing"
     }
-    return food
 }
